@@ -1,14 +1,12 @@
 <!doctype html>
-<html lang="bg">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>AYA Ultra VIP — Private Travel Design Room</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 :root{
-  --bg:#000;
   --gold:#d4af37;
   --gold-soft:#f1d27a;
   --text:#ffffff;
@@ -19,11 +17,8 @@
 
 body{
   font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-  background:
-    radial-gradient(circle at center, rgba(212,175,55,.18), transparent 55%),
-    #000;
+  background:#000;
   color:var(--text);
-  min-height:100vh;
 }
 
 .hero{
@@ -31,8 +26,12 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:24px;
+  padding:28px;
   text-align:center;
+
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.88)),
+    url("ultra-vip-bg.jpg") center/cover no-repeat;
 }
 
 .card{
@@ -41,23 +40,23 @@ body{
 
 .eyebrow{
   font-size:11px;
-  letter-spacing:.25em;
+  letter-spacing:.28em;
   text-transform:uppercase;
   color:var(--gold);
-  margin-bottom:12px;
+  margin-bottom:14px;
 }
 
 h1{
   font-size:clamp(30px,6vw,44px);
   line-height:1.15;
-  margin-bottom:16px;
+  margin-bottom:18px;
 }
 
 .sub{
   font-size:15px;
   color:var(--muted);
   line-height:1.6;
-  margin-bottom:28px;
+  margin-bottom:30px;
 }
 
 .cta{
@@ -68,9 +67,13 @@ h1{
   background:linear-gradient(135deg,var(--gold),var(--gold-soft));
   color:#000;
   font-weight:700;
-  letter-spacing:.12em;
+  letter-spacing:.14em;
   text-transform:uppercase;
   text-decoration:none;
+}
+
+.cta:active{
+  transform:scale(.98);
 }
 
 .note{
@@ -82,8 +85,10 @@ h1{
 </head>
 
 <body>
+
 <section class="hero">
   <div class="card">
+
     <div class="eyebrow">Live AYA · Ultra VIP</div>
 
     <h1>Private Travel Design Room</h1>
@@ -94,15 +99,17 @@ h1{
     </p>
 
     <a class="cta"
-       href="https://wa.me/359894842882?text=Ultra%20VIP%20Travel%20Request"
+       href="https://wa.me/359894842882"
        target="_blank">
-       Request Private Access
+      Request Private Access
     </a>
 
     <div class="note">
       Invite-only · Limited availability
     </div>
+
   </div>
 </section>
+
 </body>
 </html>
