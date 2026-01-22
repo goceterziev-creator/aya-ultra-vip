@@ -1,40 +1,129 @@
 <!doctype html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="utf-8">
   <title>AYA Ultra VIP — Private Travel Design Room</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AYA Ultra VIP — Private Travel Design Room. Tailor-made journeys. Invite-only.">
 
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
+    :root {
+      --bg: #050505;
+      --gold: #d6b46c;
+      --gold-soft: #f1d58a;
+      --text: #f5f5f5;
+      --muted: #b8b8b8;
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
+      min-height: 100vh;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background:#000;
-      color:#fff;
+      background:
+        radial-gradient(circle at center, rgba(214,180,108,0.15), transparent 55%),
+        #000;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero {
-      min-height:100vh;
-      background:
-        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
-        url("ultra-vip.jpg") center/cover no-repeat;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:40px 20px;
+      width: 100%;
+      max-width: 760px;
+      padding: 64px 20px;
+      text-align: center;
     }
 
-    .box {
-      max-width:720px;
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
     }
 
-    .eyebrow {
-      color:#d4af37;
-      letter-spacing:.25em;
-      font-size:12px;
-      text-transform:uppercase;
-      margin-bottom:16px;
+    h1 {
+      font-size: clamp(28px, 5vw, 38px);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .sub {
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 16px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+      color: #000;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 20px 50px rgba(214,180,108,0.35);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 28px 70px rgba(214,180,108,0.55);
+    }
+
+    .note {
+      margin-top: 14px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 48px;
+      font-size: 11px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="hero">
+    <div class="badge">LIVE AYA · ULTRA VIP</div>
+
+    <h1>Private Travel Design Room</h1>
+
+    <p class="sub">
+      Tell me your destination, timing and lifestyle.<br>
+      I design a tailor-made journey — discreet, precise, personal.
+    </p>
+
+    <!-- VIP v2 BUTTON -->
+    <a class="cta"
+       href="https://wa.me/359894842882?text=Hello%20AYA%20Ultra%20VIP%2C%20I%20request%20private%20travel%20access."
+       target="_blank">
+      Request Private Access
+    </a>
+
+    <div class="note">
+      Invite-only · Limited availability
+    </div>
+
+    <footer>
+      AYA · Ultra VIP Travel Design
+    </footer>
+  </main>
+</body>
+</html>      margin-bottom:16px;
     }
 
     h1 {
